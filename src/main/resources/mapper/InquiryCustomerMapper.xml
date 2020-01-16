@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.com.yezi.dao.InquiryCustomerMapper">
+  <resultMap id="BaseResultMap" type="cn.com.yezi.model.InquiryCustomer">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="customer_id" jdbcType="INTEGER" property="customerId" />
+    <result column="cus_name" jdbcType="VARCHAR" property="cusName" />
+    <result column="phone" jdbcType="VARCHAR" property="phone" />
+    <result column="company" jdbcType="VARCHAR" property="company" />
+    <result column="remark" jdbcType="VARCHAR" property="remark" />
+    <result column="reg_time" jdbcType="TIMESTAMP" property="regTime" />
+    <result column="reg_visit" jdbcType="TINYINT" property="regVisit" />
+  </resultMap>
+</mapper>
