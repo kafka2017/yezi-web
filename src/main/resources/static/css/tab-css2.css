@@ -1,0 +1,133 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "microsoft yahei";
+}
+
+img {
+	border: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+div {
+	display: block;
+}
+
+.w1200 {
+	width: 1200px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.case_box {
+	background: url(../images/case_bg.jpg) no-repeat center top;
+	height: 934px;
+}
+
+.case_box h3 {
+	color: #081232;
+	font-weight: normal;
+	font-size: 42px;
+	padding-top: 80px;
+	padding-bottom: 60px;
+	text-align: center;
+}
+
+.case_box .category ul {
+	padding-left: 50px;
+	padding-bottom: 40px;
+	display: block;
+	height: auto;
+	overflow: hidden;
+}
+
+.case_box .category ul li {
+	float: left;
+	font-size: 20px;
+	text-align: center;
+	width: 215px;
+	height: 58px;
+	line-height: 58px;
+	color: #939aac;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.case_box .category ul li.active {
+	color: #fff;
+	background: #F53B30;
+}
+
+.case_box .content {
+	padding-left: 50px;
+}
+
+.case_box .content .cont {
+	height: 650px;
+	display: none;
+}
+
+.case_box .content .cont.active {
+	display: block;
+}
+
+.case_box .content .cont img.bg {
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.videoclass {
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 710px;
+	height: 536px;
+}
+
+.case_box .content .cont .info {
+	position: absolute;
+	width: 520px;
+	height: 340px;
+	background: #fff;
+	box-shadow: 0px 0px 70px rgba(157, 179, 208, 0.4);
+	left: 0;
+	top: 120px;
+	padding: 50px 40px 0;
+	border-radius: 10px;
+}
+
+.case_box .content .cont .info .title .logo {
+	float: left;
+	padding-right: 25px;
+}
+
+.case_box .content .cont .info .title:after {
+	content: "";
+	display: block;
+	width: 0;
+	height: 0;
+	clear: both;
+}
+
+.case_box .content .cont .info .title h4 {
+	float: left;
+	padding-top: 30px;
+	font-size: 24px;
+	color: #081232;
+}
+
+.case_box .content .cont .info p {
+	font-size: 16px;
+	line-height: 32px;
+	padding-top: 30px;
+	color: #828b9f;
+}

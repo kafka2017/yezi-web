@@ -1,0 +1,615 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>椰子动画 - 您的私人订制管家</title>
+
+  <meta charset="utf-8">
+  <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="">
+
+
+  <!-- Css -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/font-icons.css" />
+  <link rel="stylesheet" href="css/cookieconsent.min.css" />
+  <link rel="stylesheet" href="css/style.css?v=1.0" />
+  <!--<link href="css/tab-css.css" rel="stylesheet" type="text/css"/>-->
+  <link rel="stylesheet" type="text/css" href="css/tab-css2.css" />
+  <link rel="stylesheet" type="text/css" href="css/alert.css" />
+
+  <!-- Favicons -->
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+
+</head>
+
+<body>
+
+  <!-- Preloader -->
+  <div class="loader-mask">
+    <div class="loader">
+      "Loading..."
+    </div>
+  </div>
+
+  <main class="main-wrapper">
+
+    <!-- Navigation -->
+    <header class="nav nav--transparent">
+      <div class="nav__holder nav--sticky">
+        <div class="container-fluid container-semi-fluid nav__container">
+          <div class="flex-parent">
+
+            <!-- Search form -->
+            <form role="search" method="get" class="nav__search-form">
+              <input type="search" class="nav__search-input" id="nav__search-input" placeholder="Type &amp; Hit Enter">
+              <i class="ui-close nav__search-close" id="nav__search-close"></i>
+            </form>
+
+            <div class="nav__header">
+              <!-- Logo -->
+              <a href="index.html" class="logo-container">
+                <img class="logo logo--light" src="img/logo-light.png" srcset="img/logo-light.png 1x, img/logo-light@2x.png 2x" alt="logo">
+                <img class="logo logo--dark" src="img/logo.png" srcset="img/logo.png 1x, img/logo@2x.png 2x" alt="logo">
+              </a>
+
+              <!-- Mobile toggle -->
+              <button type="button" class="nav__icon-toggle" id="nav__icon-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="nav__icon-toggle-bar"></span>
+                <span class="nav__icon-toggle-bar"></span>
+                <span class="nav__icon-toggle-bar"></span>
+              </button> 
+            </div>                      
+
+            <!-- Navbar -->
+            <nav id="navbar-collapse" class="nav__wrap collapse navbar-collapse nav--align-right">
+              <ul class="nav__menu">
+                <li class="nav__dropdown active">
+                  <a href="index.html" aria-haspopup="true">首页</a>
+                  <i class="ui-arrow-down nav__dropdown-trigger" role="button" aria-haspopup="true" aria-expanded="false"></i>
+                  
+                </li>
+                <li class="nav__dropdown">
+                  <a href="#" aria-haspopup="true">品牌案列</a>
+                  <i class="ui-arrow-down nav__dropdown-trigger" role="button" aria-haspopup="true" aria-expanded="false"></i>
+                  
+                </li>
+                <li class="nav__dropdown">
+                  <a href="#" aria-haspopup="true">联系咨询</a>
+                  <i class="ui-arrow-down nav__dropdown-trigger" role="button" aria-haspopup="true" aria-expanded="false"></i>
+                  
+                </li>
+                <li class="nav__dropdown">
+                  <a href="#" aria-haspopup="true">关于我们</a>
+                  <i class="ui-arrow-down nav__dropdown-trigger" role="button" aria-haspopup="true" aria-expanded="false"></i>
+                  
+                </li>
+                
+              </ul> <!-- end menu -->
+
+              <!-- Mobile Phone -->
+              <div class="nav__phone-mobile d-lg-none">
+                <a href="tel:1-800-995-3959" class="nav__phone-number">1-800-995-3959</a>
+              </div>
+              
+            </nav> <!-- end nav-wrap -->            
+
+
+            <!-- Nav Right -->
+            <div class="nav__right d-none d-lg-flex">
+              <div class="nav__right-item">
+                <a href="tel:1-800-995-3959" class="nav__phone-number">1-800-995-3959</a>
+              </div>
+
+
+            </div> <!-- end nav right -->
+        
+          </div> <!-- end flex-parent -->
+        </div> <!-- end container -->
+
+      </div>
+    </header> <!-- end navigation -->
+
+    <div class="content-wrapper oh">
+
+      <!-- Hero -->
+      <section class="hero">
+        <div class="hero__img bg-overlay" style="background-image: url(img/hero/hero_home_2.jpg)" >
+					<img src="img/hero/hero_home_2.jpg" alt="" class="d-none">
+					<div class="container hero__container full-height">
+						<div class="hero__text-holder hero__text-holder--1">
+							<h2 class="hero__subtitle hero__subtitle--1">椰子动画</h2>
+							<h1 class="hero__title hero__title--1">你的品牌故事讲述者</h1>
+							<a href="javascript:;" onclick='openWid()' class="btn btn--lg btn--color" tabindex="0">
+								<span>联系我们</span>
+							</a>
+						</div>
+					</div>
+					
+        </div>
+      </section> <!-- end hero -->
+			
+			<!-- Service Boxes -->
+			<section class="section-wrap bg-light">
+        <div class="container">  
+          <div class="slick-service-boxes--1 slick-slider-row slick-arrows-outside-top">
+			
+            <div class="slick-slide slick-slider-col slick-service-boxes__item">
+              <a href="#" class="service service--1 hover-up bg-overlay" style="background-image: url(img/services/services_img_1.jpg)">
+                <h4 class="service__title">制作时间短</h4>
+                <p class="service__text">制作周期7个工作日，行业最快，是传统视频制作周期的1/3</p>
+              </a>
+            </div>
+
+            <div class="slick-slide slick-slider-col slick-service-boxes__item">
+              <a href="#" class="service service--1 hover-up bg-overlay" style="background-image: url(img/services/services_img_2.jpg)">
+                <h4 class="service__title">制作成本低</h4>
+                <p class="service__text">传统动画按秒计算，椰子动画按照分钟计算，超高性价比</p>
+              </a>
+            </div>
+
+            <div class="slick-slide slick-slider-col slick-service-boxes__item">
+              <a href="#" class="service service--1 hover-up bg-overlay" style="background-image: url(img/services/services_img_3.jpg)">
+                <h4 class="service__title">互动性强</h4>
+                <p class="service__text">内容生动形象，活泼有趣的风格，可以提高观众观赏性和趣味性</p>
+              </a>
+            </div>
+
+            
+
+          </div> <!-- end slick-service-boxes -->
+				</div>
+			</section> <!-- end service boxes -->
+			
+		<!-- Promo Section -->
+      <section class="section-wrap promo pb-32">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-7 mb-48">
+				<video id="video"  width="640" height="480" controls  preload="metadata">
+					  <source src="video/palading.mov">
+				</video>
+               
+            </div>
+            <div class="col-lg-5">
+							<div class="promo__text-holder">								
+								<h2 class="promo__title">唯美插画风</h2>
+								<p class="promo__text lead">Aesthetic Art</p>
+								<p class="promo__text mb-0 lead">每一秒都是风景，动画最不缺的就是用充满想象力的唯美画面讲述你的故事，按下暂停键，每一秒都是你的品牌风景。</p>
+							</div>
+            </div>
+          </div>
+        </div> 
+      </section> <!-- end promo section -->	
+
+
+      <!-- Promo Section -->
+      <section class="section-wrap promo pb-32">
+        <div class="container">
+          <div class="row">
+		  <div class="col-lg-5">
+							<div class="promo__text-holder">								
+								<h2 class="promo__title">科技风</h2>
+								<p class="promo__text lead">Coporate Technology Style</p>
+								<p class="promo__text mb-0 lead">21世纪，科技感是必须的选择，卖茶叶蛋也要搭上区块链的列车，不是噱头，我们给你的是实实在在的简洁科技风。</p>
+							</div>
+            </div>
+            <div class="col-lg-7 mb-48">
+			  <video id="video"  width="640" height="480" controls  preload="metadata" >
+				  <source src="video/rong360tianji.mp4" />
+				</video>
+            </div>
+            
+          </div>
+        </div> 
+      </section> <!-- end promo section -->
+
+      <!-- Promo Section -->
+      <section class="section-wrap promo pb-32">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-7 mb-48">
+				<video id="video"  width="640" height="480" controls  preload="metadata" >
+				  <source src="video/tianmao.mp4" />
+				</video>
+            </div>
+            <div class="col-lg-5">
+							<div class="promo__text-holder">								
+								<h2 class="promo__title">传统卡通</h2>
+								<p class="promo__text lead">Traditional Cartoonish</p>
+								<p class="promo__text mb-0 lead">简单线条与颜色，勾勒出你独有的品牌故事，人在很多时候并不在乎是否新潮，他们在乎的是用他们舒服的方式，看清楚他们想要的东西，这是你最好的选择。</p>
+							</div>
+            </div>
+			
+          </div>
+        </div> 
+      </section> <!-- end promo section -->
+	  
+	<div class="case_box">
+	<h3>不同的动画风格，总有一款适合你</h3>
+	<div class="category w1200">
+		<ul>
+			<li class="active">教育行业</li>
+			<li>金融行业</li>
+			<li>地产行业</li>
+			<li>动漫行业</li>
+			<li>人工智能</li>
+		</ul>
+	</div>
+	<div class="content w1200">
+		<div class="cont active">
+			<div class='videoclass'>
+				<video id="video" controls  preload="metadata" >
+					  <source src="video/palading.mov" /></video>
+			</div>
+			<div class="info">
+				<div class="title">
+					<div class="logo"><img src="statics/images/logo1.png" /></div>
+					<h4>教育行业</h4>
+				</div>
+				<p>动画也可以将现实刻画的如此真实而又天马行空，真实的质感却又不失动画得活泼，让你的品牌在稳重中不失一种年轻的活力。</p>
+			</div>
+		</div>
+		<div class="cont">
+			<div class='videoclass'>
+				<video id="video" controls  preload="metadata" >
+					  <source src="video/tianmao.mp4" /></video>
+			</div>
+			<div class="info">
+				<div class="title">
+					<div class="logo"><img src="statics/images/logo2.png" /></div>
+					<h4>金融行业</h4>
+				</div>
+				<p>每一秒都是风景，动画最不缺的就是用充满想象力的唯美画面讲述你的故事，按下暂停键，每一秒都是你的品牌风景。</p>
+			</div>
+		</div>
+		<div class="cont">
+			<div class='videoclass'>
+				<video id="video" controls  preload="metadata" >
+					  <source src="video/rong360tianji.mp4" /></video>
+			</div>
+			<div class="info">
+				<div class="title">
+					<div class="logo"><img src="statics/images/logo3.jpg" /></div>
+					<h4>地产行业</h4>
+				</div>
+				<p>茶小様，是由大武夷茶叶交易市场，所打造的茶产业供应链综合服务平台，通过B2B茶叶直卖的创新模式，以茶样品体验促成茶叶批量成交，为茶农茶企开拓销售渠道。</p>
+			</div>
+		</div>
+		<div class="cont">
+			<div class='videoclass'>
+				<video id="video" controls  preload="metadata" >
+					  <source src="video/rong360tianji.mp4" /></video>
+			</div>
+			<div class="info">
+				<div class="title">
+					<div class="logo"><img src="statics/images/logo4.jpg" /></div>
+					<h4>动漫行业</h4>
+				</div>
+				<p>诶呦，还不错哦，This is china，怎少得了水墨江南、秀美中国呢？传统技法，现代展现，中国风给你不一样的惊喜</p>
+			</div>
+		</div>
+		<div class="cont">
+			<div class='videoclass'>
+				<video id="video" controls  preload="metadata" >
+					  <source src="video/rong360tianji.mp4" /></video>
+			</div>
+			<div class="info">
+				<div class="title">
+					<div class="logo"><img src="statics/images/logo5.jpg" /></div>
+					<h4>人工智能</h4>
+				</div>
+				<p>21世纪，科技感是必须的选择，卖茶叶蛋也要搭上区块链的列车，不是噱头，我们给你的是实实在在的简洁科技风。</p>
+			</div>
+		</div>
+	</div>
+</div>
+			
+
+
+      <!-- CTA -->
+      <section class="section-wrap call-to-action text-center section-wrap--pt-180 section-wrap--pb-180 bg-overlay" style="background-image: url(img/cta/cta_img_2.jpg);">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-6">
+              <h3 class="call-to-action__title">
+                我们拥有强大的合作企业品牌
+              </h3>
+              <a href="javascript:;" onclick='openWid()' class="btn btn--lg btn--color">
+                <span>联系我们</span>
+              </a>
+            </div>
+          </div>
+        </div> 
+      </section> <!-- end cta -->
+
+      <!-- Team -->
+      <section class="section-wrap bg-light">
+        <div class="container">        
+          <div class="row title-row">
+            
+            <div class="col-lg-4">
+              <h2 class="section-title">创意团队</h2>
+            </div>
+
+            <div class="col-lg-7 offset-lg-1">
+              <p class="lead mb-0">椰子动画核心画师团队成员均来自全国八大美院，在品牌设计，平面设计及设计管理等领域有着良好的教育背景，尤其擅长多种风格的动画类视频领域，能从品牌、平面、视频画面为品牌提供专业高效的解决方案</p>
+            </div>
+
+          </div> <!-- end row -->
+
+          <div class="slick-team slick-slider-row">
+
+            <div class="slick-slide slick-slider-col">
+              <div class="team box-shadow hover-down">
+                <div class="team__img-holder">
+                  <img src="img/team/team_1.jpg" alt="" class="team__img">
+                </div>
+                <div class="team__body">
+                  <span class="team__occupation">广州STO</span>
+                  <h5 class="team__name">Alexander Samokhin</h5>
+                  <p class="team__text">
+                    广州STO是 BREAKING为主的街舞社团，如果单说 BREAKING这一个舞种，恐怕国内无对手，不只是团体强，团队里的每一个单拉出来，都是国内顶级B-boy
+                  </p>                  
+                  
+                </div>
+              </div>
+            </div>
+
+            <div class="slick-slide slick-slider-col">
+              <div class="team box-shadow hover-down">
+                <div class="team__img-holder">
+                  <img src="img/team/team_2.jpg" alt="" class="team__img">
+                </div>
+                <div class="team__body">
+                  <span class="team__occupation">上海caster舞团</span>
+                  <h5 class="team__name">Martha Smith</h5>
+                  <p class="team__text">
+                    上海很多知名的街舞团体，如果说知名度最高，只能是caster舞团了，其中最今很火的舞者，也就是被称为，全能王的韩宇，也是出自caster，作为最早的街
+                  </p>                  
+                  
+                </div>
+              </div>
+            </div>
+
+            <div class="slick-slide slick-slider-col">
+              <div class="team box-shadow hover-down">
+                <div class="team__img-holder">
+                  <img src="img/team/team_3.jpg" alt="" class="team__img">
+                </div>
+                <div class="team__body">
+                  <span class="team__occupation">成都星空间</span>
+                  <h5 class="team__name">Kelly Green</h5>
+                  <p class="team__text">
+                    成都星空间，也是国内比较早的街舞团体，成立于2003年，是西南地区最为顶尖个最为专业的街舞团队，多次获得CCTV全国电视街舞大赛
+                  </p>                  
+                  
+                </div>
+              </div>
+            </div>
+
+            
+
+          </div> <!-- end slider -->
+
+        </div>
+      </section> <!-- end team -->
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__widgets">
+            <div class="row">
+
+              <div class="col-lg-3 col-md-6">
+                <div class="widget widget-about-us">
+                  <!-- Logo -->
+                  <a href="index.html" class="logo-container flex-child">
+                    <img class="logo" src="img/logo.png" srcset="img/logo.png 1x, img/logo@2x.png 2x" alt="logo">
+                  </a>
+                  <div class="socials mt-32">
+                    <a href="#" class="social social-twitter" aria-label="twitter" title="twitter" target="_blank"><i class="ui-twitter"></i></a>
+                    <a href="#" class="social social-facebook" aria-label="facebook" title="facebook" target="_blank"><i class="ui-facebook"></i></a>
+                    <a href="#" class="social social-google-plus" aria-label="google plus" title="google plus" target="_blank"><i class="ui-google"></i></a>
+                  </div>
+                </div>
+              </div> <!-- end about us -->
+
+
+              <div class="col-lg-3 offset-lg-3 col-md-6">
+                <div class="widget widget_nav_menu">
+                  <h5 class="widget-title">方案</h5>
+                  <ul>
+                    <li><a href="#">制作时间短</a></li>
+                    <li><a href="#">制作成本低</a></li>
+                    <li><a href="#">互动性强</a></li>
+                    <li><a href="#">产品内容丰富</a></li>
+                    <li><a href="#">创新独特</a></li>
+                  </ul>
+                </div>
+              </div>
+
+
+              <div class="col-lg-3 col-md-6">
+                <div class="widget widget-address">
+                  <h5 class="widget-title">公司信息</h5>
+                  <ul>
+					<li>
+						周一 到 周日 09:30 - 18:30
+					</li>
+                    <li><address>深圳市高新南十二路22-12号</address></li>
+                    <li>
+                      <span>电话: </span>
+                      <a href="tel:+1-800-1554-456-123">+ 1 (800) 155 4561</a>
+                    </li>
+                    <li>
+                      <span>邮箱: </span>
+                      <a href="mailto:hi@margin.com">hi@margin.com</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>           
+
+            </div>
+          </div>    
+        </div> <!-- end container -->
+
+        <div class="footer__bottom">
+          <div class="container">
+            <div class="row">              
+              <div class="col-lg-6">
+                <div class="widget widget_nav_menu">
+                  <ul>
+                    <li><a href="#">关于我们</a></li>
+                    <li><a href="#">品牌案例</a></li>
+                    <li><a href="#">联系咨询</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-6 text-right text-md-center">
+                <span class="copyright">
+                  &copy; 2019 - 2020  椰子动画, 创作者番茄很忙
+                </span>
+              </div>
+            </div>            
+          </div>
+        </div> <!-- end footer bottom -->
+      </footer> <!-- end footer -->
+
+      <div id="back-to-top">
+        <a href="#top"><i class="ui-arrow-up"></i></a>
+      </div>
+
+    </div> <!-- end content wrapper -->
+  </main> <!-- end main wrapper -->
+  
+  <div class="hint">
+	<div class="hint-in1">
+		<div class="hint1"></div>
+		<div class="hint2">我要定制视频</div>
+		<div class="hint3"></div>
+	</div>
+	<div class="hint-in2">
+		<table style='auto:0;align:center;' border='0'>
+			<tr>
+				<td>您的称呼</td>
+				<td>
+					<input type='text' value="" id="cusName" placeholder="您的称呼"/>
+				</td>
+			</tr>
+			<tr>
+				<td>您的手机号</td>
+				<td>
+					<input type='text' value="" id="phone" placeholder="您的手机号"/>
+				</td>
+			</tr>
+			<tr>
+				<td>公司（单位）</td>
+				<td>
+					<input type='text' value="" id="company" placeholder="公司（单位）"/>
+				</td>
+			</tr>
+			<tr>
+				<td>视频简介</td>
+				<td>
+					<textarea rows="2" cols="20" id="remark" placeholder="视频简介"></textarea>
+				</td>
+			</tr>
+		</table>	
+	</div>
+	<div class="hint-in3">确定</div>
+	<div class="hintl-in4">取消</div>
+</div>
+  
+
+  <!-- jQuery Scripts -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/scripts.js"></script>
+  
+  <script type="text/javascript">
+	$(function() {
+		$('.category ul li').click(function() {
+			var i = $(this).index();
+			$(this).addClass('active').siblings().removeClass('active');
+			$('.content .cont').eq(i).addClass('active').siblings().removeClass('active');
+		})
+	});
+	
+	function openWid(){
+		$(".hint").css({"display":"block"});
+		$(".box").css({"display":"block"});
+	}
+	
+	
+	
+	$(".hint-in3").click(function(event) {
+
+        var cusName = $('#cusName').val();
+        var phone = $('#phone').val();
+        var company = $('#company').val();
+        var remark = $('#remark').val();
+
+        if(cusName==''){
+            alert('请输入您的称呼');
+            return;
+        }
+
+        if(phone==''){
+            alert('请输入您的手机号');
+            return;
+        }
+
+        if(!(/^1(3|4|5|6|7|8|9)\d{9}$/.test(phone))){
+            alert("手机号码有误，请重填");
+            return;
+        }
+
+        if(company==''){
+            alert('请输入您的公司（单位）');
+            return;
+        }
+
+        if(remark==''){
+            alert('请输入视频简介');
+            return;
+        }
+
+        $.ajax({
+            type:'post',
+            url:'/inquiry/customer/register',
+            data:{'cusName':cusName,'phone':phone,'company':company,'remark':remark},
+            dataType:'json',
+            success:function (res) {
+                if(res.code==200){
+                    alert('提交成功，我们会尽快联系您');
+                    $(".hint").css({"display":"none"});
+                    $(".box").css({"display":"none"});
+                }else{
+                    alert(res.message);
+                }
+            },
+            error:function(){
+                alert('系统异常');
+            }
+
+        })
+
+
+	});
+
+    $(".hintl-in4").click(function(event) {
+        $(".hint").css({"display":"none"});
+        $(".box").css({"display":"none"});
+    });
+	
+	
+</script>
+    
+</body>
+</html>
