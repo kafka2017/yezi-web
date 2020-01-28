@@ -6,9 +6,9 @@
 	<groupId>yezi-web</groupId>
 	<artifactId>yezi-web</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
+	<packaging>war</packaging>
 	<name>yezi</name>
-	<description>search</description>
+	<description>yezi</description>
 
 	<properties>
 		<java.version>1.8</java.version>
@@ -27,7 +27,22 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
+			<!--war temp-->
+			<!--<exclusions>
+				<exclusion>
+					<groupId>org.springframework.boot</groupId>
+					<artifactId>spring-boot-starter-tomcat</artifactId>
+				</exclusion>
+			</exclusions>-->
 		</dependency>
+		<!--war temp-->
+		<!--<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+			<version>3.1.0</version>
+			<scope>provided</scope>
+		</dependency>-->
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-jdbc</artifactId>
@@ -50,21 +65,7 @@
 			<groupId>redis.clients</groupId>
 			<artifactId>jedis</artifactId>
 		</dependency>
-		<!-- <dependency> <groupId>io.dubbo.springboot</groupId> <artifactId>spring-boot-starter-dubbo</artifactId>
-			<version>1.0.0</version> </dependency> -->
-		<dependency>
-			<groupId>com.alibaba</groupId>
-			<artifactId>dubbo</artifactId>
-			<version>2.6.3</version>
-			<exclusions>
-				<exclusion>
-					<groupId>org.jboss.netty</groupId>
-					<artifactId>netty</artifactId>
-				</exclusion>
-			</exclusions>
-		</dependency>
-		<!-- <dependency> <groupId>com.101tec</groupId> <artifactId>zkclient</artifactId> 
-			<version>0.10</version> </dependency> -->
+
 		<!--常用库依赖 -->
 		<dependency>
 			<groupId>commons-codec</groupId>
