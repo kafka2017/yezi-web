@@ -2,7 +2,7 @@ spring:
   profiles:
     active: dev
   datasource: 
-    url: jdbc:mysql://localhost:3306/yezi?useSSL=false&characterEncoding=utf8
+    url: jdbc:mysql://47.112.109.252:3306/yezi?useSSL=false&characterEncoding=utf8
     username: root 
     password: yezi123
     type: com.alibaba.druid.pool.DruidDataSource
@@ -18,7 +18,7 @@ spring:
     host: smtp.qq.com
     username: 260008747@qq.com
     receivers: 1433378045@qq.com;weiyf_2010@163.com
-    password: bvwdymyjolcnbigddd
+    password: bvwdymyjolcnbigd
     port: 465
     properties:
       mail:
@@ -33,8 +33,8 @@ spring:
     time-zone: GMT+8
   servlet:
     multipart:
-      max-file-size: 20MB
-      max-request-size: 20MB
+      max-file-size: 500MB
+      max-request-size: 500MB
 
 logging:
   level: {root: INFO, com.wotopten.crm.dao: DEBUG}
