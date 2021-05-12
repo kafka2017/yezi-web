@@ -7,6 +7,7 @@ import cn.com.yezi.model.InquiryCustomer;
 import cn.com.yezi.service.InquiryCustomerService;
 import cn.com.yezi.core.AbstractService;
 import cn.com.yezi.service.SendEmailService;
+import cn.com.yezi.util.RegexUtil;
 import cn.com.yezi.vo.InquiryCustomerParam;
 import net.sf.oval.ConstraintViolation;
 import net.sf.oval.Validator;
@@ -47,7 +48,17 @@ public class InquiryCustomerServiceImpl extends AbstractService<InquiryCustomer>
             return ResultGenerator.genFailResult(ret.get(0).getMessage());
         }
 
-        int count = yzInquiryCustomerMapper.selectInquiryCustomerCount(param.getCusName());
+        String phone = param.getPhone();
+        String cusName = param.getCusName();
+
+        Boolean flag = RegexUtil.isChinaPhoneLegal(phone);
+
+        if(!flag){
+
+            return ResultGenerator.genFailResult("手机号码格式错误");
+        }
+
+        int count = yzInquiryCustomerMapper.selectInquiryCustomerCount(phone);
 
         if(count > 0){
 

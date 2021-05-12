@@ -7,8 +7,8 @@ public interface InquiryCustomerMapper extends Mapper<InquiryCustomer> {
 
     /**
      * 查询当天注册的用户数量
-     * @param cusName
+     * @param phone
      * @return
      */
-    public int selectInquiryCustomerCount(String cusName);
+    public int selectInquiryCustomerCount(String phone);
 }

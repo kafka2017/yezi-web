@@ -16,6 +16,6 @@
 
   <!--查询询价用户当天注册数量-->
   <select id="selectInquiryCustomerCount" resultType="java.lang.Integer">
-      select count(1)  from yz_inquiry_customer where cus_name=#{cusName} and DATE_FORMAT(reg_time,'%Y-%m-%d')=DATE_FORMAT(now(),'%Y-%m-%d')
+      select count(1)  from yz_inquiry_customer where phone=#{phone}
   </select>
 </mapper>
