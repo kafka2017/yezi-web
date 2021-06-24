@@ -1,10 +1,13 @@
-spring: 
+server:
+  port: 8066
+
+spring:
   profiles:
     active: dev
   datasource: 
-    url: jdbc:mysql://42.51.191.227:3306/yezi?useSSL=false&characterEncoding=utf-8
-    username: root 
-    password: yezidonghua123
+    url: jdbc:mysql://rm-wz9ro6o5wl6o02v8h3o.mysql.rds.aliyuncs.com/bluebooknet?useSSL=false&zeroDateTimeBehavior=convertToNull&transformedBitIsBoolean=true&serverTimezone=GMT%2B8&nullCatalogMeansCurrent=true&allowPublicKeyRetrieval=true
+    username: bluebookadmin
+    password: Bluebook@admin888
     type: com.alibaba.druid.pool.DruidDataSource
     driver-class-name: com.mysql.jdbc.Driver
   resources:
@@ -17,7 +20,7 @@ spring:
   mail:
     host: smtp.qq.com
     username: 260008747@qq.com
-    receivers: 1433378045@qq.com;344209881@qq.com;kentyezi@foxmail.com
+    receivers: 1433378045@qq.com;kentyezi@foxmail.com
     password: bvwdymyjolcnbigd
     port: 465
     properties:
@@ -38,3 +41,4 @@ spring:
 
 logging:
   level: {root: INFO, com.wotopten.crm.dao: DEBUG}
+

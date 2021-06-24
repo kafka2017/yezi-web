@@ -6,13 +6,9 @@ import cn.com.yezi.model.InquiryCustomer;
 import cn.com.yezi.service.InquiryCustomerService;
 import cn.com.yezi.vo.InquiryCustomerParam;
 import org.springframework.stereotype.Controller;
-import com.github.pagehelper.PageHelper;
-import com.github.pagehelper.PageInfo;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.servlet.ModelAndView;
 
 import javax.annotation.Resource;
-import java.util.List;
 
 /**
  * 询价客户
